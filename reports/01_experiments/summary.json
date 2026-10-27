@@ -1,0 +1,21 @@
+{
+  "rows": 64000,
+  "arm_counts": {
+    "No E-Mail": 21306,
+    "Mens E-Mail": 21307,
+    "Womens E-Mail": 21387
+  },
+  "srm_p_value": 0.9036929575604196,
+  "srm_pass_at_001": true,
+  "primary_metric": "conversion",
+  "family_size": 6,
+  "max_absolute_balance_smd": 0.01365900039927897,
+  "planning": {
+    "baseline_conversion": 0.01,
+    "absolute_mde": 0.003,
+    "power": 0.8,
+    "alpha_per_comparison": 0.008333333333333333,
+    "customers_per_arm": 30590,
+    "note": "Illustrative prospective assumptions, not observed business targets."
+  }
+}

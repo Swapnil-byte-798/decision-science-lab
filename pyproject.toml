@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decision-science-lab"
+version = "0.1.0"
+description = "Real-data experiments, causal targeting, SQL cohorts, and chronological forecasting"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2,<3", "pandas>=2.2,<3", "scipy>=1.13,<2", "scikit-learn>=1.5,<2", "matplotlib>=3.9,<4", "openpyxl>=3.1,<4", "requests>=2.32,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+decision-lab = "decision_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+decision_lab = ["sql/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires downloaded real datasets"]
+
+[tool.ruff]
+line-length = 100

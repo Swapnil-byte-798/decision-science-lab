@@ -1,0 +1,50 @@
+{
+  "contrast": "Mens E-Mail versus No E-Mail",
+  "outcome": "visit",
+  "propensity": 0.5,
+  "split_rows": {
+    "train": 25567,
+    "validation": 8523,
+    "test": 8523
+  },
+  "features": [
+    "recency",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel"
+  ],
+  "candidates": [
+    {
+      "model": "logistic",
+      "validation_qini_area": 0.001959072199595359
+    },
+    {
+      "model": "forest",
+      "validation_qini_area": 0.003317633911587958
+    }
+  ],
+  "selected_model": "forest",
+  "test_qini_area": 0.0009956012902757048,
+  "top_30_percent": {
+    "ci_low": 0.014783526927138331,
+    "ci_high": 0.03496421447847002,
+    "incremental_visits_per_eligible_customer": 0.0251085298603778,
+    "target_fraction": 0.3000117329578787
+  },
+  "random_30_percent_expected_incremental_visits": 0.022245688137979582,
+  "paired_advantage_over_expected_random_30_percent": {
+    "estimate": 0.0028628417223982147,
+    "ci_low": -0.0052575384254370545,
+    "ci_high": 0.010678164965387767
+  },
+  "email_everyone": {
+    "ci_low": 0.05749149360553796,
+    "ci_high": 0.09057843482341899,
+    "incremental_visits_per_eligible_customer": 0.07415229379326528,
+    "target_fraction": 1.0
+  },
+  "note": "Pointwise intervals conditional on frozen model/actions, excluding training uncertainty."
+}

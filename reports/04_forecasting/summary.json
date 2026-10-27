@@ -1,0 +1,33 @@
+{
+  "complete_weeks": 52,
+  "initial_train_weeks": 26,
+  "validation_weeks": 12,
+  "test_weeks": 14,
+  "horizon_weeks": 1,
+  "selected_model": "trailing_4_week_mean",
+  "selection_metric": "validation MAE",
+  "test_results": [
+    {
+      "split": "test",
+      "model": "last_week",
+      "mae_gbp": 56659.16785714286,
+      "rmse_gbp": 68284.73473341545,
+      "wape": 0.2032463148101891
+    },
+    {
+      "split": "test",
+      "model": "ridge_lags",
+      "mae_gbp": 51147.76379748322,
+      "rmse_gbp": 67751.77043928743,
+      "wape": 0.18347594742004183
+    },
+    {
+      "split": "test",
+      "model": "trailing_4_week_mean",
+      "mae_gbp": 46312.7255,
+      "rmse_gbp": 62974.91615841164,
+      "wape": 0.1661318219572866
+    }
+  ],
+  "note": "Expanding origins use prior actuals only. No annual seasonality or profit claim."
+}

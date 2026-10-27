@@ -1,0 +1,6 @@
+step,rows,removed
+raw,541909,0
+remove_exact_duplicates,536641,5268
+exclude_cancellation_invoices,527390,9251
+require_positive_quantity,526054,1336
+require_positive_price,524878,1176

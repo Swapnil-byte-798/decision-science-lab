@@ -1,0 +1,10 @@
+{
+  "raw_rows": 541909,
+  "positive_sales_rows": 524878,
+  "positive_sales_rows_missing_customer": 132186,
+  "complete_month_orders": 19141,
+  "identified_customers": 4297,
+  "analysis_asof_exclusive": "2011-12-01",
+  "gross_sales_gbp_complete_months": 10004320.474,
+  "note": "Positive gross sales exclude returns; cohort is first observed purchase, not verified acquisition."
+}
